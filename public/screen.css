@@ -72,7 +72,8 @@ nav a{
 figure {
   display: flex;
   flex-direction: column;
-  align-items: flex-start
+  align-items: flex-start;
+  padding-bottom: 8px;
 }
 
 figcaption {
@@ -84,7 +85,7 @@ section {
     margin-left: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1012px) {
   
   main {
     display: flex;
@@ -96,6 +97,40 @@ section {
 
   section {
     width: 25%;
+  }
+
+  .nav-back {
+    display: contents;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1011px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  section {
+    width: 33%;
+  }
+
+  .nav-back {
+    display: contents;
+  }
+}
+
+@media (min-width: 479px) and (max-width: 767px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  section {
+    width: 50%;
   }
 
   .nav-back {
